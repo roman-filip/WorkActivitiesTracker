@@ -30,6 +30,24 @@ namespace RFI.WorkActivitiesTracker.Api.Controllers
             return new User { Id = id, FirstName = "Roman", LastName = "FILIP" };
         }
 
+        // GET: api/Users/5/WorkActivities
+        [HttpGet("{idUser}/WorkActivities")]
+        public IEnumerable<WorkActivity> GetWorkActivities(int idUser)
+        {
+            return new List<WorkActivity>
+            {
+                new WorkActivity
+                {
+                    Id = idUser,
+                    StartTime = DateTime.Now.AddHours(-5),
+                    EndTime = DateTime.Now,
+                    User = new User { Id = 1, FirstName = "Roman", LastName = "FILIP" },  // makes no sense in this controller
+                    Project = new Project { Id = 1, Name = "CS44" },
+                    Activity = new Activity { Id = 1, Name = "Development" }
+                }
+            };
+        }
+
         // POST: api/Users
         [HttpPost]
         public void Post([FromBody]string value)
