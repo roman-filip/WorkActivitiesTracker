@@ -4,9 +4,9 @@ namespace RFI.WorkActivitiesTracker.Api.Models
 {
     public class WorkActivity
     {
-        public int Id { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public int? Id { get; set; }
+        public DateTime? StartTime { get; set; }
+        public DateTime? EndTime { get; set; }
 
 
         // TODO - maybe I should create special classes where will be only some of properies below
