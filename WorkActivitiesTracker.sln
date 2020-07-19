@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.WorkActivitiesTracker.Api", "RFI.WorkActivitiesTracker.Api\RFI.WorkActivitiesTracker.Api.csproj", "{3A3F0DC5-F148-4D3C-BC2D-EA01DD3DA085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RFI.WorkActivitiesTracker.Api", "RFI.WorkActivitiesTracker.Api\RFI.WorkActivitiesTracker.Api.csproj", "{3A3F0DC5-F148-4D3C-BC2D-EA01DD3DA085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkActivitiesTracker.Web.Server", "WorkActivitiesTracker.Web\Server\WorkActivitiesTracker.Web.Server.csproj", "{AAF070B9-4B25-41FF-9B2B-2DB7396A3F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkActivitiesTracker.Web.Client", "WorkActivitiesTracker.Web\Client\WorkActivitiesTracker.Web.Client.csproj", "{8FEE1F56-998B-4815-9FD7-0FE7EB6A98CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkActivitiesTracker.Web.Shared", "WorkActivitiesTracker.Web\Shared\WorkActivitiesTracker.Web.Shared.csproj", "{E3EF07F5-BB38-481D-890C-61161D6B432B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{3A3F0DC5-F148-4D3C-BC2D-EA01DD3DA085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A3F0DC5-F148-4D3C-BC2D-EA01DD3DA085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A3F0DC5-F148-4D3C-BC2D-EA01DD3DA085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF070B9-4B25-41FF-9B2B-2DB7396A3F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF070B9-4B25-41FF-9B2B-2DB7396A3F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF070B9-4B25-41FF-9B2B-2DB7396A3F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF070B9-4B25-41FF-9B2B-2DB7396A3F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FEE1F56-998B-4815-9FD7-0FE7EB6A98CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FEE1F56-998B-4815-9FD7-0FE7EB6A98CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FEE1F56-998B-4815-9FD7-0FE7EB6A98CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FEE1F56-998B-4815-9FD7-0FE7EB6A98CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3EF07F5-BB38-481D-890C-61161D6B432B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3EF07F5-BB38-481D-890C-61161D6B432B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3EF07F5-BB38-481D-890C-61161D6B432B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3EF07F5-BB38-481D-890C-61161D6B432B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
