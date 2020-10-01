@@ -3,16 +3,19 @@
 
 <h1>Timesheet</h1>
 
-<h2>@_selectedTimesheet.Date.ToString("MMMM yyyy")</h2>
-<button class="btn btn-primary" @onclick="PrevMonth">&lt;</button>
-<button class="btn btn-primary" @onclick="NextMonth">&gt;</button>
-<br />
-<button class="btn btn-primary" @onclick="OnStartWork">Start Work</button>
-<button class="btn btn-primary" @onclick="OnStopWork">Stop Work</button>
+<div>
+    <button type="button" class="btn btn-success btn-sm m-1" @onclick="PrevMonth">&lt;</button>
+    <button type="button" class="btn btn-success btn-sm" @onclick="NextMonth">&gt;</button>
+    <b class="m-1">@_selectedTimesheet.Date.ToString("MMMM yyyy")</b>
+</div>
 
+<div>
+    <button type="button" class="btn btn-primary m-1" @onclick="OnStartWork">Start Work</button>
+    <button type="button" class="btn btn-primary m-1" @onclick="OnStopWork">Stop Work</button>
+</div>
 
-<table class="table">
-    <thead>
+<table class="table table-striped m-1">
+    <thead class="thead-dark">
         <tr>
             <th>Date</th>
             <th>Start time</th>
